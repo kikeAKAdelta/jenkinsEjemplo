@@ -1,9 +1,9 @@
 pipeline{
     agent any
     
-    triggers{
+    /*triggers{
      cron('H * /4 * * 1-5')   
-    }
+    }*/
     
     parameters{
      string(name:'PERSON',defaultValue:'MR. JENKINS',description:'SOY LA MERA VERGA EN SALSA')   
