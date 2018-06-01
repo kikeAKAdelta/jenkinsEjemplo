@@ -9,7 +9,8 @@ pipeline{
             
             
             steps{
-             echo 'Hola perras'   
+             echo 'Hola perras'  
+                echo CC
             }
         }
     }
