@@ -23,6 +23,15 @@ pipeline{
     stages{
         stage('example'){
             
+            input {
+                message "Should we continue?"
+                ok "Yes, we should."
+                submitter "alice,bob"
+                parameters {
+                    string(name: 'PERSONAS', defaultValue: 'Mr Jenkins', description: 'Who should I say hello to?')
+                }
+            }
+            
             options{
                 timeout(time:1,unit:'HOURS')   
             }
