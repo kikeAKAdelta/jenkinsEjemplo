@@ -1,6 +1,8 @@
 pipeline{
     agent any
     
+    agent { docker { image 'maven:3.3.3' } }
+    
     /*triggers{
      cron('H * /4 * * 1-5')   
     }*/
