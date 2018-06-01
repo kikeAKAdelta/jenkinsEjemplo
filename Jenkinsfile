@@ -6,7 +6,7 @@ pipeline{
     }*/
     
     tools{
-      maven 'apache-maven-3.5.2'   
+      maven '/opt/apache-maven-3.5.2'   
     }
     
     parameters{
