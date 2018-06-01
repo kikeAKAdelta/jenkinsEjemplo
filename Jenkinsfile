@@ -11,7 +11,9 @@ pipeline{
     stages{
         stage('example'){
             
-            
+            options{
+     timeout(time:1,unit:'HOURS')   
+    }
             
             steps{
              echo 'Hola perras'  
